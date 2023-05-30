@@ -1,0 +1,3 @@
+connect target "sys/Oracle123 as sysdba"
+BACKUP AS COMPRESSED BACKUPSET DATABASE;
+exit;

@@ -1,0 +1,8 @@
+connect target "sys/Oracle123 as sysdba";
+STARTUP FORCE MOUNT;
+run{
+set UNTIL TIME "to_date('21/05/2023 12:38:36 PM','dd/mm/yyyy hh:mi:ss am')";
+restore database;
+recover database;
+alter database open noresetlogs;
+}

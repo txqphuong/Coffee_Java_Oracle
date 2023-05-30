@@ -1,0 +1,3 @@
+connect target "sys/Oracle123 as sysdba"
+LIST BACKUP;
+exit;
